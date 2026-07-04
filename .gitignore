@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Build
+build/
+dist/*.exe
+dist/input.txt
+dist/downloads/
+*.spec
+
+# Debug / temp
+debug_*.html
+debug_*.py
+debug_download.*
+input.txt
+
+# OS
+Thumbs.db
+.DS_Store

@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+tqdm
+colorama
+pyperclip
+flask
+pywebview
+curl_cffi
