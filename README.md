@@ -1,34 +1,48 @@
-# Fitgirl-Easy-Downloader
+# FitGirl Easy Downloader GUI
 
-This Tool Helps To Download Multiple Files Easily From fitgirl-repacks.site Through fuckingfast.co
+Descarga juegos de **fitgirl-repacks.site** alojados en **fuckingfast.co** con múltiples descargas en paralelo.
 
-## Prerequisites
+---
 
-Ensure you have the following installed before running the script :
+## 🚀 Usar el .exe (recomendado)
 
-`Python 3.8+`
+1. Descargá `FitGirl-Downloader-GUI.exe`
+2. Abrí el programa
+3. Pegá la URL de un juego de FitGirl (ej: `https://fitgirl-repacks.site/...`)
+4. Click **"Extraer enlaces"**
+5. Click **"Iniciar descarga"**
+
+No necesita instalar nada. Solo Windows 10/11 64-bit.
+
+---
+
+## 🐍 Usar desde Python
 
 ```bash
 pip install -r requirements.txt
+python gui.py
 ```
 
-## Usage
+---
 
-1. **Get Direct Download Links** : Run `get_links.py`, enter the Fitgirl game page URL, and all FuckingFast links will be copied to your clipboard automatically.
-   ```bash
-   python get_links.py
-   ```
-2. **Prepare Input Links** : Paste the copied links into `input.txt`, one per line.
-3. **Run the Script** :
-   ```bash
-   python main.py
-   ```
-4. The script will :
-   - Process each link in `input.txt`.
-   - Extract and download files to the `downloads/<game-name>/` folder.
-   - Remove processed links from `input.txt`.
+## 📦 Generar .exe propio
 
-## Disclaimer
+```bash
+pip install pyinstaller
+pyinstaller --onefile --name "FitGirl-Downloader-GUI" --add-data "web;web" gui.py
+```
 
-This tool is created for educational purposes and ethical use only. Any misuse of this tool for malicious purposes is not condoned. The developers of this tool are not responsible for any illegal or unethical activities carried out using this tool.
-[![Star History Chart](https://api.star-history.com/svg?repos=JoyNath1337/Fitgirl-Easy-Downloader&type=Date)](https://star-history.t9t.io/#JoyNath1337/Fitgirl-Easy-Downloader&Date)
+El .exe queda en `dist/FitGirl-Downloader-GUI.exe`.
+
+---
+
+## ⚠️ Disclaimer
+
+Herramienta educativa. No nos responsabilizamos del mal uso que se le pueda dar.
+
+---
+
+## 👥 Créditos
+
+- **[Aecito](https://github.com/Aecito)** — Adaptación HTMX, GUI web, debug
+- **[JoyNath1337](https://github.com/JoyNath1337)** — Proyecto original FitGirl-Easy-Downloader
